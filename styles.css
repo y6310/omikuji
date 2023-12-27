@@ -1,0 +1,130 @@
+/* @import url(https://fonts.googleapis.com/earlyaccess/hannari.css); */
+@import url(https://fonts.googleapis.com/earlyaccess/sawarabimincho.css);
+
+
+	body {
+	    /* background: linear-gradient(-45deg, rgba(246, 255, 0, .5), rgba(255, 0, 161, .5)), */
+	    /* url(images/shrine.jpg); */
+	    /*background-color: #eeeeee;*/
+
+	    background-color: #f4efe7;
+	   
+	    background-size: cover;
+	    /* font-family: "Hannari"; */
+	    font-family: 'Sawarabi Mincho';
+	    height: 100vh;
+	}
+
+	.container {
+	    width: 90%;
+	    margin: auto;
+	    text-align: center;
+	}
+
+	h1 {
+	    font-size: 4rem;
+	    color: #4e454a;
+	    /* text-shadow: 3px 0 #252525; */
+	}
+
+	button {
+		position: relative;
+		display: block;
+		justify-content: space-around;
+		align-items: center;
+	    font-size: 1.3rem;
+	    font-family: 'Sawarabi Mincho';
+		font-weight: 600;
+	    color: #4e454a;
+	    background-color: #8ED0D9;
+		margin: 0 auto;
+	    padding: 10px 25px;
+	    border-radius: 10px;
+	    transition-duration: 0.3s ease-in-out;
+	    -webkit-transition-duration: 0.3s; /* Safari */
+	}
+
+	button:hover {
+	    /*color: #fff;*/
+		background: #00A8BF;
+	}
+
+	#kuji{
+	    /* display: flex; */
+	    /* background-color: #bae8e8; */
+	    /* border-radius: 5px; */
+	    height: 400px;
+	    width: 100%;
+	    margin: auto;
+	    /* margin-bottom: 30px; */
+		transform: scaleY(1) rotateY(360deg);
+	}
+
+	.kuji {
+	    max-height: 80%;
+	    max-width: 150%;
+	    /* width: 80%;
+	    opacity: 90%; */
+
+	}
+
+	img.pengin {
+	    width: 15%;
+	    height: 15%;
+	}
+	img.torii {
+	    width: 30%;
+	    height: 30%;
+	}
+	#lucky{
+		display: none;
+	}
+
+	br{
+		display: block;
+		content: "";
+		margin: 10px 0;	
+	}
+
+	#loading{
+		display: none;
+	}
+
+	.snow {
+		/*雪の色*/
+		color: snow;
+		/*雪の大きさ*/
+		font-size: 10px;
+		/*初期位置*/
+		position: fixed;
+		top: -5%;
+		/*雪を適当な幅で降らせる*/
+		text-shadow:
+		5vw   -100px 2px,
+		10vw  -400px 3px,
+		20vw  -500px 4px,
+		30vw  -580px 1px,
+		39vw  -250px 2px,
+		42vw  -340px 5px,
+		56vw  -150px 2px,
+		63vw  -180px 0,
+		78vw  -220px 4px,
+		86vw  -320px 9px,
+		94vw  -170px 7px;
+		/*雪アニメーション1*/
+		animation: roll 5s linear infinite;
+	  }
+		/*2つめの雪アニメーション*/
+	  .snow2nd{animation: anim 8s linear infinite;}
+	  
+	  @keyframes roll {
+		  0% {transform:rotate(0deg);}
+		 90% {opacity:1;}
+		 100% {transform:rotate(20deg);top:100%;opacity:0;}
+	  }
+	  @keyframes anim {
+		100% {color:transparent;top:150%;}
+	  }
+
+
+
